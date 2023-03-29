@@ -15,7 +15,7 @@ export default function amortizationToTable(state) {
       const montant = tableData[tableData.length - 1][5];
       const interest = montant * t;
       const amortissement = anuite - interest;
-      tableData.push([i, interest, interest, amortissement, anuite, montant - amortissement]);
+      tableData.push([i, montant, interest, amortissement, anuite, montant - amortissement]);
     }
   }
   for (let i = 0; i < tableData.length; i += 1) {
